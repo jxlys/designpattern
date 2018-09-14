@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Person {
+public abstract class Person {
 	private String name;
 	private PersonType sex;
 	private String type;
