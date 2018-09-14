@@ -7,11 +7,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public enum PersonType {
-	Man("man"), WUMEN("wuman");
+	MAN("man"), WUMEN("wuman"), GOOD_USER("good"), BAD_USER("bad");
 	@Getter
 	private String value;
 
 	public static boolean isMan(PersonType srcType) {
-		return srcType == Man ? true : false;
+		return srcType == MAN ? true : false;
 	}
 }
