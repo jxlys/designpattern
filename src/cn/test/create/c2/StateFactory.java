@@ -11,7 +11,7 @@ import cn.test.entity.PersonType;
 public class StateFactory extends PersonFactory {
 
 	private static PersonFactory stateFactory = new StateFactory();
-	private PersonType[] types = new PersonType[] { PersonType.MAN, PersonType.WUMEN };
+	private PersonType[] types = new PersonType[] { PersonType.GOOD_USER, PersonType.BAD_USER };
 
 	public Person createNewPerson(PersonType type) {
 		switch (type) {
