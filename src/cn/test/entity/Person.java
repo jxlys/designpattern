@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 public class Person {
 	private String name;
 	private PersonType sex;
+	private String type;
 	private Integer age;
 	private String money;
 
