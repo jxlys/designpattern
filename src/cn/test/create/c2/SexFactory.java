@@ -1,9 +1,6 @@
 package cn.test.create.c2;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 import cn.test.entity.Man;
 import cn.test.entity.Person;
