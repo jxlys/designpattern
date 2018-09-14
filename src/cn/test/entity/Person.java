@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class User {
+public class Person {
 	private String name;
-	private String sex;
+	private PersonType sex;
 	private Integer age;
 	private String money;
 
