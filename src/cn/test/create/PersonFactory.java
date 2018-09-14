@@ -4,7 +4,7 @@ import cn.test.entity.*;
 
 //Factory
 //静态工厂类
-public class UserFactory {
+public class PersonFactory {
 
 	/**
 	 * 对象创建对象
