@@ -12,9 +12,9 @@ import cn.test.stru_entity.Walk;
  */
 public class WalkFacade implements Walk {
 
-	public void wolk() {
-		WalkFacadeSingleton.left.wolk();
-		WalkFacadeSingleton.right.wolk();
+	public void walk() {
+		WalkFacadeSingleton.left.walk();
+		WalkFacadeSingleton.right.walk();
 	}
 
 	public static Walk getInstance() {

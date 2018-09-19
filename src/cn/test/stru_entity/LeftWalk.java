@@ -5,7 +5,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class LeftWalk implements Walk {
 
-	public void wolk() {
+	public void walk() {
 		System.out.println("Left Leg");
 	}
 
