@@ -1,38 +1,49 @@
 package cn.test;
 
-import cn.test.create.c2.PersonFactory;
-import cn.test.entity.Person;
-import cn.test.entity.PersonType;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 public class TestMain {
 	public static void main(String[] args) {
 		Animal a = Animal.getInstance();
 		System.out.println(a);
+		Animal b = Animal.getInstance();
+		System.out.println(b);
+		System.out.println();
+
+		b.getB().value = "2";
+		System.out.println(a);
+		System.out.println(b);
 	}
+}
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+class B {
+	String value;
 }
 
 @Data
 class Animal implements Cloneable {
-	private Animal() {
-		name = "1";
-		p = PersonFactory.createPerson(PersonType.BAD_USER);
-	}
 
-	private String name;
-	private Person p;
+	private B b;
 
-	static class B {
-		private static Animal animal = new Animal();
+	static class C {
+		private static Animal animal = new Animal() {
+			{
+				setB(new B("1"));
+			}
+		};
 	}
 
 	public static Animal getInstance() {
 		try {
-			Animal b = (Animal) B.animal.clone();
-			
+			Animal b = (Animal) C.animal.clone();
 			return b;
 		} catch (CloneNotSupportedException e) {
+			return null;
 		}
-		return null;
 	}
 }

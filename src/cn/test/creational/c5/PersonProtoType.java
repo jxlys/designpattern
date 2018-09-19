@@ -1,4 +1,4 @@
-package cn.test.create.c5;
+package cn.test.creational.c5;
 
 /**
  * 原型方式

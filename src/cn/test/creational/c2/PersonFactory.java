@@ -1,4 +1,4 @@
-package cn.test.create.c2;
+package cn.test.creational.c2;
 
 import cn.test.entity.Person;
 import cn.test.entity.PersonType;

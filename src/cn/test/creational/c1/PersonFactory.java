@@ -1,4 +1,4 @@
-package cn.test.create.c1;
+package cn.test.creational.c1;
 
 import cn.test.entity.*;
 

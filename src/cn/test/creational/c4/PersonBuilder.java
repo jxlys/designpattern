@@ -1,10 +1,10 @@
-package cn.test.create.c4;
+package cn.test.creational.c4;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import cn.test.create.c2.PersonFactory;
+import cn.test.creational.c2.PersonFactory;
 import cn.test.entity.Person;
 import cn.test.entity.PersonType;
 

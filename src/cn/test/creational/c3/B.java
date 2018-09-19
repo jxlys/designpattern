@@ -1,4 +1,4 @@
-package cn.test.create.c3;
+package cn.test.creational.c3;
 
 //懒汉式
 public class B {
